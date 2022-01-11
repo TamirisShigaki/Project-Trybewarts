@@ -1,16 +1,14 @@
-window.onload = function () {
-  let email = document.querySelector("#email").value;
-  let senha = document.querySelector("#senha").value;
-  let botaoEntrar = document.querySelector(".botao-entrar");
+const botaoEntrar = document.querySelector('.botao-entrar');
 
-  function login() {
-    if (email === "tryber@teste.com" && senha === 123456) {
-      alert("Olá, Tryber!");
-    } else {
-      alert("Email ou senha inválidos.");
-    }
+function login() {
+  const email = document.querySelector('#email');
+  const senha = document.querySelector('#senha');
+
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    alert("Olá, Tryber!");
+  } else {
+    alert("Email ou senha inválidos.");
   }
-  login();
+}
 
-  botaoEntrar.addEventListener("click", login);
-};
+botaoEntrar.addEventListener('click', login);
