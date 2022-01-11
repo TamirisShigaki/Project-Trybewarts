@@ -36,3 +36,13 @@
 #informações {
   display: flex;
 }
+
+#familiares {
+  display: flex;
+  flex-direction: column;
+}
+
+#lista-conteudos {
+  display: flex;
+  flex-direction: column;
+}
