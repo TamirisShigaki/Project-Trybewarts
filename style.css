@@ -46,3 +46,7 @@
   display: flex;
   flex-direction: column;
 }
+
+#avaliacao {
+  display: flex;
+}
