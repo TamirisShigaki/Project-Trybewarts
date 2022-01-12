@@ -26,6 +26,7 @@ function habilitarBotao() {
   }
 }
 
+//! Contador
 
 const contadorInicial = contadorLetras.innerText;
 function contador() {
@@ -33,8 +34,22 @@ function contador() {
 
 }
 
+//! Substituindo informações do Forms
+
+function formulario (event) {
+  event.preventDefault();
+  const nome = document.querySelector('#input-name').value;
+  const sobrenome = document.querySelector('#input-lastname').value;
+  const email = document.querySelector('#input-email').value;
+  const casa = document.querySelector('#house');
+  const familia = document.querySelector('#familiares');
+  const materias = document.querySelector('#lista-conteudos');
+  const avaliacao = document.querySelector('#avaliacao');
+  const observacoes = document.querySelector('#textarea').value;
+
+}
+
+botaoSubmit.addEventListener('click', formulario);
 textArea.addEventListener('keyup', contador);
 checkAgreement.addEventListener('click', habilitarBotao);
 botaoEntrar.addEventListener('click', login);
-
-//! Contador
