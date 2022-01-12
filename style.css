@@ -79,6 +79,10 @@
   display: flex;
 }
 
+#textarea {
+  resize: none;
+}
+
 #validacao {
   display: flex;
 }
