@@ -54,3 +54,7 @@
 #validacao {
   display: flex;
 }
+
+#submit-btn {
+  width: 50px;
+}

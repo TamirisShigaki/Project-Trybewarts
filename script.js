@@ -1,4 +1,6 @@
 const botaoEntrar = document.querySelector('.botao-entrar');
+const botaoSubmit = document.querySelector("#submit-btn");
+const checkAgreement = document.querySelector("#agreement");
 
 function login() {
   const email = document.querySelector('#email');
@@ -11,4 +13,16 @@ function login() {
   }
 }
 
+
+
+
+function habilitarBotao() {
+  if(checkAgreement.checked == true) {
+    botaoSubmit.removeAttribute("disabled");
+  } else {
+    botaoSubmit.setAttribute("disabled", "");
+  }
+}
+
+checkAgreement.addEventListener('click', habilitarBotao);
 botaoEntrar.addEventListener('click', login);
