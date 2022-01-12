@@ -1,26 +1,23 @@
 const botaoEntrar = document.querySelector('.botao-entrar');
-const botaoSubmit = document.querySelector("#submit-btn");
-const checkAgreement = document.querySelector("#agreement");
+const botaoSubmit = document.querySelector('#submit-btn');
+const checkAgreement = document.querySelector('#agreement');
 
 function login() {
   const email = document.querySelector('#email');
   const senha = document.querySelector('#senha');
 
   if (email.value === 'tryber@teste.com' && senha.value === '123456') {
-    alert("Olá, Tryber!");
+    alert('Olá, Tryber!');
   } else {
-    alert("Email ou senha inválidos.");
+    alert('Email ou senha inválidos.');
   }
 }
 
-
-
-
 function habilitarBotao() {
   if(checkAgreement.checked == true) {
-    botaoSubmit.removeAttribute("disabled");
+    botaoSubmit.removeAttribute('disabled');
   } else {
-    botaoSubmit.setAttribute("disabled", "");
+    botaoSubmit.setAttribute('disabled', '');
   }
 }
 
