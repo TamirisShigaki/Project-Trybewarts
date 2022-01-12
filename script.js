@@ -14,7 +14,7 @@ function login() {
 }
 
 function habilitarBotao() {
-  if(checkAgreement.checked == true) {
+  if (checkAgreement.checked) {
     botaoSubmit.removeAttribute('disabled');
   } else {
     botaoSubmit.setAttribute('disabled', '');
