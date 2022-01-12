@@ -1,3 +1,5 @@
+//!login
+
 const botaoEntrar = document.querySelector('.botao-entrar');
 const botaoSubmit = document.querySelector('#submit-btn');
 const checkAgreement = document.querySelector('#agreement');
@@ -12,6 +14,8 @@ function login() {
   }
 }
 
+//! Botão enviar
+
 function habilitarBotao() {
   if (checkAgreement.checked) {
     botaoSubmit.removeAttribute('disabled');
@@ -22,3 +26,5 @@ function habilitarBotao() {
 
 checkAgreement.addEventListener('click', habilitarBotao);
 botaoEntrar.addEventListener('click', login);
+
+//! Contador
