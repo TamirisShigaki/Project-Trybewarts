@@ -48,14 +48,10 @@ function contador() {
 
 function formulario (event) {
   event.preventDefault();
-  let array = [];
+  let array = []
   for (let i =0; i < 7; i += 1) {
-    array[i] = document.createElement('div');
+    array[i] = document.createElement('div')
 }
-for (let i =0; i < array.length; i += 1) {
-  array[i] = document.createElement('div');
-}
-
 
 }
 
