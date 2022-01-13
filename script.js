@@ -36,8 +36,7 @@ function contador() {
 
 //! Substituindo informações do Forms
 
-function formulario (event) {
-  event.preventDefault();
+  const form = document.createElement('form');
   const nome = document.querySelector('#input-name').value;
   const sobrenome = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
@@ -46,6 +45,17 @@ function formulario (event) {
   const materias = document.querySelector('#lista-conteudos');
   const avaliacao = document.querySelector('#avaliacao');
   const observacoes = document.querySelector('#textarea').value;
+
+function formulario (event) {
+  event.preventDefault();
+  let array = [];
+  for (let i =0; i < 7; i += 1) {
+    array[i] = document.createElement('div');
+}
+for (let i =0; i < array.length; i += 1) {
+  array[i] = document.createElement('div');
+}
+
 
 }
 
