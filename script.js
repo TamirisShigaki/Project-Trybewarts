@@ -79,8 +79,17 @@ function checkedAvaliacao() {
   }
 }
 
+function removeDiv() {
+  const formDiv = document.querySelectorAll('#evaluation-form div');
+  for (let index = 0; index < formDiv.length; index += 1) {
+    formDiv[index].remove();
+  }
+}
+
 function formulario(event) {
   event.preventDefault();
+  removeDiv();
+
   divNome.innerText = `Nome: ${nome.value} ${sobrenome.value}`;
   divEmail.innerText = `Email: ${email.value}`;
   divCasa.innerText = `Casa: ${casa.value}`;
