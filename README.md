@@ -1,4 +1,4 @@
- # 08 - Projeto MTrybewarts
+ # 08 - Projeto Trybewarts
 
 ## Contexto
 
